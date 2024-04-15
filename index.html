@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #87ceeb;
+            padding: 20px;
+            text-align: center;
+        }
+        .header button {
+            background-color: #00bfff;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+        }
+        .product p {
+            width: 300px;
+            margin: 10px;
+        }
+        .footer {
+            background-color: #87ceeb;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .form input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form input[type=submit] {
+            width: 100%;
+            background-color: #00bfff;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Cricket Bats Company</h1>
+    <button>Home</button>
+    <button>Product</button>
+</div>
+
+<div class="product">
+    <img src="bat1.jpg" alt="Bat 1">
+    <p>Brand: XYZ<br>Description: High quality cricket bat with great balance and power.<br>Price: $200</p>
+    <img src="bat2.jpg" alt="Bat 2">
+    <p>Brand: ABC<br>Description: Durable cricket bat with excellent pick up and performance.<br>Price: $250</p>
+</div>
+
+<div class="footer">
+    <p>Copyright © 2022 Cricket Bats Company</p>
+</div>
+
+<div class="form">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
